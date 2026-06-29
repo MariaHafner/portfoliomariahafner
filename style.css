@@ -1,20 +1,131 @@
-/*ajustar apenas para mobile*/
+/*Aqui ele adapta os tamanhos para o mobile*/
 @media (max-width: 768px) {
-
     html, body {
         width: 100%;
         overflow-x: hidden;
     }
 
-    .sobremim,
-    .formacao,
-    .portfolio,
-    .contato {
-        width: 100%;
+    * {
+        box-sizing: border-box;
     }
 
-}
+    /* MENU MOBILE */
 
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 6px 8px;
+        background-color: #511829;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        font-size: 5px;
+        padding: 6px 6px;
+        width: auto;
+    }
+
+    .logo {
+        width: 10px;
+    }
+
+    /* SOBRE MIM MOBILE */
+
+    .sobremim {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .sobre_img, .sobre_texto {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .sobre_img {
+        margin-bottom: 20px;
+        flex: unset;
+    }
+
+    .sobre_img img {
+        width: 70%;
+        max-width: 260px;
+    }
+
+    .sobre_texto {
+        flex: unset;
+        padding: 0 10px;
+    }
+
+    /* FORMAÇÃO MOBILE */
+
+    .formacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 80px 20px;
+        background-color: #F47B9F;
+        text-align: center;
+    }
+
+    .cards {
+        justify-content: center;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* PORTIFÓLIO MOBILE */
+
+     .portfolio {
+        padding: 40px 20px;
+    }
+
+    .frame_portfolio {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .texto_portfolio {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        order: 1;
+    }
+
+    .frame_portfolio iframe, .frame_portfolio video {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        order: 2;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* CONTATO MOBILE */
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
 
 h1, p, a, h2, h3, label, button {  font-family: "Poppins", sans-serif;
     font-style: normal;
