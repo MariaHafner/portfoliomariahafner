@@ -1,3 +1,21 @@
+/*ajustar apenas para mobile*/
+@media (max-width: 768px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .sobremim,
+    .formacao,
+    .portfolio,
+    .contato {
+        width: 100%;
+    }
+
+}
+
+
 h1, p, a, h2, h3, label, button {  font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -26,7 +44,7 @@ p{
 }
 
 span{
-    color: #E5507D
+    color:#E5507D;
 }
 
 .navbar {
@@ -68,7 +86,7 @@ span{
     display: block;
 }
 
-.sobremim {
+    .sobremim {
     color:#E5507D;
     display: flex;
     justify-content: center;
@@ -77,6 +95,7 @@ span{
     width: 100%;
     padding:80px 0;
 }
+
 
 .sobre_img{
     width: 50%;
@@ -127,6 +146,7 @@ span{
     justify-content: center;
     align-items: center;
 }
+
 
 .formacao {
     display: flex;
@@ -236,3 +256,4 @@ button {
 button:hover{
     background-color: #C5EFB8;
 }
+
