@@ -121,7 +121,7 @@
     textarea {
         width: 100%;
     }
-    
+
     button {
         width: 100%;
     }
@@ -197,7 +197,7 @@ span{
     display: block;
 }
 
-    .sobremim {
+.sobremim {
     color:#E5507D;
     display: flex;
     justify-content: center;
