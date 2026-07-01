@@ -28,3 +28,25 @@ ${mensagem}`;
     `mailto:contatomariahafner@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
 
 });
+
+//BARRA MENU NO MOBILE
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+    const openMenu = document.getElementById('open_menu');
+    const menu = document.getElementById('menu_mobile');
+    const closeMenu = document.getElementById('close_menu');
+    const menuFlutuante = document.getElementById('navbar_mobile');
+    const header = document.querySelector(".header img");
+
+    openMenu.addEventListener('click', ()=>{
+        menu.classList.add('active');
+        menuFlutuante.classList.add('hidden');
+        header.style.marginTop = "0";
+    })
+
+    closeMenu.addEventListener('click', ()=>{
+        menu.classList.remove('active');
+        menuFlutuante.classList.remove('hidden');
+        header.style.marginTop = "50px";
+    })
+}
